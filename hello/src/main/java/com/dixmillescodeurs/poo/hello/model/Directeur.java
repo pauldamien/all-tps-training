@@ -12,6 +12,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 public class Directeur extends Employe {
   public double calculSalaire() {
-    return (double) (this.getAnciennete() * 2) * Util.SALAIRE_BASE;
+    return (double)
+            (this.getAnciennete() * 2) * Util.SALAIRE_BASE;
   }
 }
